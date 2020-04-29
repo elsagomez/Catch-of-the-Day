@@ -14,11 +14,7 @@ const Login = (props) => (
         onClick={() => props.authenticate('Twitter')}>
         Login with Twitter
         </button>
-        <button 
-        className="facebook" 
-        onClick={() => props.authenticate('Facebook')}>
-        Login with Facebook
-        </button>
+
 
     </nav>
 );
