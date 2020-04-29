@@ -14,7 +14,7 @@ class StorePicker extends React.Component {
         //2. get the text from input
         const storeName = this.myInput.current.value;
         //3. change the page to /store/whatevertheyenter
-        this.props.history.push(`/store/${storeName}`)
+        this.props.history.push(`/store/${storeName}`);
 
     }
 
@@ -32,7 +32,7 @@ render() {
         <button type="submit">Visit Store</button>
     </form>
     
-    ) 
+    );
 }
 }
 

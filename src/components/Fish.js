@@ -12,6 +12,7 @@ class Fish extends React.Component {
                 price: PropTypes.number
             }),
             addToOrder: PropTypes.func
+            index: PropTypes.string
         };
         render() {
         const { image, name, desc, price, status } = this.props.details;
@@ -29,7 +30,7 @@ class Fish extends React.Component {
                 >
                     {isAvailable ? "Add To Order" : "Sold Out"}</button>
             </li>
-        )
+        );
     }
 }
 

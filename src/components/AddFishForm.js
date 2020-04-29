@@ -19,8 +19,8 @@ class AddFishForm extends React.Component {
             price : parseFloat(this.priceRef.current.value),
             status : this.statusRef.current.value,
             desc : this.descRef.current.value,
-            image : this.imageRef.current.value,
-        }
+            image : this.imageRef.current.value
+        };
         this.props.addFish(fish);
         //refresh form
         event.currentTarget.reset();

@@ -39,6 +39,7 @@ class App extends React.Component {
     componentWillUnmount() {
         base.removeBinding(this.ref);
     }
+
     addFish = fish => {
         //1. Take a copy of existing state
         const fishes = {...this.state.fishes};
@@ -57,7 +58,7 @@ class App extends React.Component {
         fishes[key] = updatedFish;
         //3. set that to state
         this.setState({ fishes });
-    }
+    };
 
     deleteFish = key => {
         //1.Take a copy of state
@@ -66,7 +67,7 @@ class App extends React.Component {
         fishes[key] = null;
         //3.update the state
         this.setState({ fishes });
-    }
+    };
 
     loadSampleFishes = () => {
         this.setState({fishes:sampleFishes})
@@ -79,7 +80,7 @@ class App extends React.Component {
         order[key] = order[key] + 1 || 1;
         //3.. call setstate to update our state object
         this.setState({ order: order });
-    }
+    };
     removeFromOrder = key => {
           //1. take copy of state
           const order ={ ...this.state.order };
@@ -87,7 +88,7 @@ class App extends React.Component {
           delete order[key];
           //3.. call setstate to update our state object
           this.setState({ order: order });
-    }
+    };
     render() {
         return (
             <div className="catch-of-the-day">

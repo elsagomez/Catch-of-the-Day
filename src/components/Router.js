@@ -13,5 +13,5 @@ const Router = () => (
 
         </Switch>
     </BrowserRouter>
-)
+);
 export default Router;

@@ -23,4 +23,4 @@ Login.propTypes = {
     authenticate: PropTypes.func.isRequired
 };
 
-export default Login
+export default Login;
