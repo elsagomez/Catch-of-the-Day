@@ -15,8 +15,8 @@ class Inventory extends React.Component {
     };
 
     state = {
-        uid : null,
-        owner : null
+        uid: null,
+        owner: null
     };
 
     componentDidMount() {
